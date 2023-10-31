@@ -16,7 +16,7 @@ const Map = ()=>{
         let t1 = L.marker([51.505, -0.09]);
         t1.addTo(map);
 
-        setTimeout(()=>t1.remove(), 3000);
+        setTimeout(()=>map.flyTo({lat: 51.505, lng: 30}), 3000);
     })
     return <div id="map-div" class="h-3/4 w-full z-20"></div>
 };
